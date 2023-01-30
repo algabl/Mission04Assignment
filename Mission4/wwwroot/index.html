@@ -3,25 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title>Alexander Black</title>
-    <link rel="icon" type="image/x-icon" href="img/rocket-solid.svg">
-    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
-
+    <link rel="icon" type="image/x-icon" href="img/rocket-solid.svg"> <!--Favicon import-->
+    <!--CSS import-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"> 
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1>Alexander Black</h1>
-    <img src="img/enjoy.jpeg"/>
-
-    <ol>
-        <li>First option</li>
-        <li>Second option</li>
-        <li>Third option</li>
-    </ol>
-
-    <form>
-        
-    </form>
+    <nav class="nav-color navbar-nav shadow"> <!--Top header with name as title-->
+        <div class="container">
+            <h1 class="navbar-text txt-white">Alexander Black</h1>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="img/enjoy.jpeg" alt="picture of me hiking" class="img-thumbnail shadow-lg"/>
+            </div>
+            <div class="col-sm p-4">
+                <h2>What I hope to get out of IS 413:</h2>
+                <p>
+                    I hope to learn a ton about web development and increase my skills, capabilities, and speed. This stuff is really exciting! Building dynamic applications is so fun, and I cannot wait to learn more.
+                </p>
+                <h2>Top Jobs I'm Interested In:</h2>
+                <ol>
+                    <li>Software developer (remote)</li>
+                    <li>Database administrator (remote)</li>
+                    <li>Cybersecurity analyst (remote)</li>
+                </ol>
+            </div>
+            <div class="col-lg-4">
+                <div class="card shadow-lg">
+                    <div class="card-body p-4">
+                        <h2 class="card-title">Grade Calculator</h2>
+                        <form> <!--Grade calculation form-->
+                            <div class="form-floating p-1">
+                                <input id="assignments" type="number" class="form-control" placeholder="Enter assignment grade %"/>
+                                <label for="assignments">Enter assignment grade %</label>
+                            </div>
+                            <div class="form-floating p-1">
+                                <input id="groupproject" type="number" class="form-control" placeholder="Enter group project grade %"/>
+                                <label for="groupproject">Enter group project grade %</label>
+                            </div>
+                            <div class="form-floating p-1">
+                                <input id="quizzes" type="number" class="form-control" placeholder="Enter quizzes grade %"/>
+                                <label for="quizzes">Enter quizzes grade %:</label>
+                            </div>
+                            <div class="form-floating p-1">
+                                <input id="midtermexam" type="number" class="form-control" placeholder="Enter grade %"/>
+                                <label for="midtermexam">Enter midterm exam grade %:</label>
+                            </div>
+                            <div class="form-floating p-1">
+                                <input id="finalexam" type="number" class="form-control" placeholder="Enter grade %"/>
+                                <label for="finalexam">Enter final exam grade %:</label>
+                            </div>
+                            <div class="form-floating p-1">
+                                <input id="intex" type="number" class="form-control" placeholder="Enter grade %"/>
+                                <label for="intex">Enter INTEX grade %:</label>
+                            </div>
+                            <div class="form-group pt-2 p-1">
+                                <input id="calculate" type="button" class="btn btn-primary" value="Calculate final grade"/>
+                            </div>
+                            <div class="form-group">
+                                <b id="finalgrade"></b>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--JavaScript imports-->
     <script src="lib/jquery/jquery-3.6.3.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-
+    <script src="js/custom.js"></script>
 </body>
 </html>

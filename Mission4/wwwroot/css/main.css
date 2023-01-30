@@ -1,0 +1,21 @@
+
+/*Add animation to image*/
+.img-thumbnail {
+    -webkit-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.img-thumbnail:hover {
+    transform: scale(.95);
+    animation-duration: .25s;
+}
+
+/*Add color to navbar*/
+.nav-color { 
+    background-color: #0d6efd;
+}
+
+/*Change nav title to be visible*/
+.txt-white {
+    color: white;
+}

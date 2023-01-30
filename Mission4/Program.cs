@@ -6,7 +6,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-
+/*Author: Alexander Black*/
+/*Description: A simple site about myself*/
 namespace Mission4
 {
     public class Program
