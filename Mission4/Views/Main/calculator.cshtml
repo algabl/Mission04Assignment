@@ -1,0 +1,48 @@
+@{
+    ViewData["Title"] = "Grade Calculator";
+}
+
+@model GradeCalculationModel;
+<div class="container mt-4">
+    <div class="col-lg-4">
+        <div class="card shadow-lg">
+            <div class="card-body p-4">
+                <h2 class="card-title">Grade Calculator</h2>
+                <form method="post" class="calculate-form"> <!--Grade calculation form-->
+                    <div class="form-floating p-1">
+                        <input id="assignments" asp-for="Assignments" class="form-control" placeholder="Enter assignment grade %"/>
+                        <label for="assignments">Enter assignment grade %</label>
+                    </div>
+                    <div class="form-floating p-1">
+                        <input id="groupproject" asp-for="GroupProject" class="form-control" placeholder="Enter group project grade %"/>
+                        <label for="groupproject">Enter group project grade %</label>
+                    </div>
+                    <div class="form-floating p-1">
+                        <input id="quizzes" asp-for="Quizzes" class="form-control" placeholder="Enter quizzes grade %"/>
+                        <label for="quizzes">Enter quizzes grade %:</label>
+                    </div>
+                    <div class="form-floating p-1">
+                        <input id="midtermexam" asp-for="MidtermExam" class="form-control" placeholder="Enter grade %"/>
+                        <label for="midtermexam">Enter midterm exam grade %:</label>
+                    </div>
+                    <div class="form-floating p-1">
+                        <input id="finalexam" asp-for="FinalExam" class="form-control" placeholder="Enter grade %"/>
+                        <label for="finalexam">Enter final exam grade %:</label>
+                    </div>
+                    <div class="form-floating p-1">
+                        <input id="intex" asp-for="Intex" class="form-control" placeholder="Enter grade %"/>
+                        <label for="intex">Enter INTEX grade %:</label>
+                    </div>
+                    <div class="form-group pt-2 p-1">
+                        <input id="calculate" type="submit" class="btn btn-primary" value="Calculate final grade"/>
+                    </div>
+                    <div class="form-group">
+                        <div asp-validation-summary="All"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" type="image/x-icon" href="~/img/rocket-solid.svg"> <!--Favicon import-->
+    <!--CSS import-->
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css"> 
+    <link rel="stylesheet" href="~/css/main.css">
+</head>
+<body>
+<nav class="nav-color navbar-nav shadow"> <!--Top header with name as title-->
+    <div class="container">
+        <a asp-controller="Main" asp-action="Index" class="txt-white navbar-text h3">Alexander Black</a>
+        <a asp-controller="Main" asp-action="Calculator" class="txt-white navbar-text h3">Calculator</a>
+    </div>
+        
+</nav>
+    @RenderBody()
+<!--JavaScript imports-->
+<script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+<script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="~/js/custom.js"></script>
+</body>
+</html>
